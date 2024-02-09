@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 from pymongo import MongoClient
 
-client = MongoClient("oculto")
+client = MongoClient("token mongodb")
 db = client["tribunaldados"]
 collection = db["advertencias"]
 intents = discord.Intents.default()
@@ -164,4 +164,4 @@ async def help(ctx):
   -"/pendingrolls" mostra uma tabela com as roletas pendentes
   -"/topadv" mostra uma lista com todos os réus do Tribunal.""")
 
-bot.run("oculto")
+bot.run("token do discord")
